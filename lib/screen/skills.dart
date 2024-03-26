@@ -51,99 +51,147 @@ class _SkillsState extends State<Skills> {
               height: 60,
               width: double.infinity,
               decoration: const BoxDecoration(color: Color(0xff009788)),
-              child: const SingleChildScrollView(
+              child:  SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Personal',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/home');
+                      },
+                      child: const Text(
+                        'Personal',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Education',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/education');
+                      },
+                      child: const Text(
+                        'Education',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Skills',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/skill');
+                      },
+                      child: const Text(
+                        'Skills',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'About',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/about');
+                      },
+                      child: const Text(
+                        'About',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Experience',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/experience');
+                      },
+                      child: const Text(
+                        'Experience',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'projects',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/project');
+                      },
+                      child: const Text(
+                        'projects',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'certifications',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/certification');
+                      },
+                      child: const Text(
+                        'certifications',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'languages',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/language');
+                      },
+                      child: const Text(
+                        'languages',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'socials',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/social');
+                      },
+                      child: const Text(
+                        'socials',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
                   ],
                 ),
@@ -158,11 +206,12 @@ class _SkillsState extends State<Skills> {
                 style: const TextStyle(
                     color: Colors.black,
                     fontSize: 20,
-                    fontWeight: FontWeight.w500),
+                    fontWeight: FontWeight.w400),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  hintText: 'Skills',
+                  fillColor: const Color(0xffECECEC),
+                  label:Text('skills',style: TextStyle(fontSize: 25),),
+                  hintText: 'Enter a single skill here',
                   suffixIcon: Padding(
                     padding: const EdgeInsets.only(right: 20),
                     child: Container(
@@ -183,7 +232,7 @@ class _SkillsState extends State<Skills> {
                   ),
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -196,24 +245,72 @@ class _SkillsState extends State<Skills> {
             ),
             Padding(
               padding: const EdgeInsets.only(right: 10, left: 10),
-              child: TextFormField(
-                style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500),
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
-                  contentPadding:
-                      const EdgeInsets.symmetric(vertical: 155, horizontal: 20),
+              child: Container(
+                height: 360,
+                width: 420,
+                decoration: BoxDecoration(
+                  color: Color(0xffECECEC),
+                  borderRadius: BorderRadius.circular(10)
                 ),
-              ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 30,horizontal: 20),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        height: 60,
+                        width: 250,
+                        decoration: BoxDecoration(
+                            color: Color(0xffF5F5F5),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 10,),
+                            Text('communication',style: TextStyle(color: Colors.black87,fontWeight: FontWeight.w500,fontSize: 22),),
+                            SizedBox(width: 50,),
+                            Icon(Icons.close,color: Colors.black87,)
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 10,),
+                      Container(
+                        height: 60,
+                        width: 250,
+                        decoration: BoxDecoration(
+                            color: Color(0xffF5F5F5),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 10,),
+                            Text('C language',style: TextStyle(color: Colors.black87,fontWeight: FontWeight.w500,fontSize: 22),),
+                            SizedBox(width: 90,),
+                            Icon(Icons.close,color: Colors.black87,)
+                          ],
+                        ),
+                      ),
+                      SizedBox(height: 10,),
+                      Container(
+                        height: 60,
+                        width: 250,
+                        decoration: BoxDecoration(
+                            color: Color(0xffF5F5F5),
+                            borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Row(
+                          children: [
+                            SizedBox(width: 10,),
+                            Text('Dart',style: TextStyle(color: Colors.black87,fontWeight: FontWeight.w500,fontSize: 22),),
+                            SizedBox(width: 160,),
+                            Icon(Icons.close,color: Colors.black87,)
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                )
+            ),
             ),
             const Padding(
               padding:  EdgeInsets.only(right: 180, top: 20),
@@ -234,156 +331,68 @@ class _SkillsState extends State<Skills> {
             const SizedBox(height: 20,),
             Row(
               children: [
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 10, left: 10),
-                    child: TextFormField(
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: const Color(0xffF5F5F5),
-                        label: const Text(
-                          'Communication',
-                          style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w300),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        //contentPadding: const EdgeInsets.symmetric(vertical: 155, horizontal: 20),
-                      ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  child: Container(
+                    height: 65,
+                    width: 200,
+                    decoration: BoxDecoration(
+                      color: Color(0xffF5F5F5),
+                      borderRadius: BorderRadius.circular(10)
                     ),
+                    child: Center(child: Text('Communication',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 22),)),
                   ),
                 ),
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 10, left: 10),
-                    child: TextFormField(
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: const Color(0xffF5F5F5),
-                        label: const Text(
-                          'Problem solving',
-                          style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.w300,
-                              fontSize: 22),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        //contentPadding: const EdgeInsets.symmetric(vertical: 155, horizontal: 20),
-                      ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  child: Container(
+                    height: 65,
+                    width: 200,
+                    decoration: BoxDecoration(
+                        color: Color(0xffF5F5F5),
+                        borderRadius: BorderRadius.circular(10)
                     ),
+                    child: Center(child: Text('Problem solving',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 22),)),
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 10,),
             Row(
               children: [
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 10, left: 10),
-                    child: TextFormField(
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: const Color(0xffF5F5F5),
-                        label: const Text(
-                          'Creativity',
-                          style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w300),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        //contentPadding: const EdgeInsets.symmetric(vertical: 155, horizontal: 20),
-                      ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  child: Container(
+                    height: 65,
+                    width: 120,
+                    decoration: BoxDecoration(
+                        color: Color(0xffF5F5F5),
+                        borderRadius: BorderRadius.circular(10)
                     ),
+                    child: Center(child: Text('Creativity',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 22),)),
                   ),
                 ),
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 5),
-                    child: TextFormField(
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: const Color(0xffF5F5F5),
-                        label: const Text(
-                          'photoshop',
-                          style: TextStyle(
-                              fontSize: 22,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w300),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        //contentPadding: const EdgeInsets.symmetric(vertical: 155, horizontal: 20),
-                      ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  child: Container(
+                    height: 65,
+                    width: 150,
+                    decoration: BoxDecoration(
+                        color: Color(0xffF5F5F5),
+                        borderRadius: BorderRadius.circular(10)
                     ),
+                    child: Center(child: Text('Photoshop',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 22),)),
                   ),
                 ),
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 10, left: 10),
-                    child: TextFormField(
-                      style: const TextStyle(
-                          color: Colors.black,
-                          fontSize: 20,
-                          fontWeight: FontWeight.w500),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: const Color(0xffF5F5F5),
-                        label: const Center(
-                          child: Text(
-                            'Excel',
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontWeight: FontWeight.w300,
-                                fontSize: 22),
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        focusedBorder: OutlineInputBorder(
-                            borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
-                        //contentPadding: const EdgeInsets.symmetric(vertical: 155, horizontal: 20),
-                      ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                  child: Container(
+                    height: 65,
+                    width: 110,
+                    decoration: BoxDecoration(
+                        color: Color(0xffF5F5F5),
+                        borderRadius: BorderRadius.circular(10)
                     ),
+                    child: Center(child: Text('Excel',style: TextStyle(color: Colors.black,fontWeight: FontWeight.w500,fontSize: 22),)),
                   ),
                 ),
               ],

@@ -51,99 +51,147 @@ class _AboutState extends State<About> {
               height: 60,
               width: double.infinity,
               decoration: const BoxDecoration(color: Color(0xff009788)),
-              child: const SingleChildScrollView(
+              child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Personal',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/home');
+                      },
+                      child: const Text(
+                        'Personal',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Education',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/education');
+                      },
+                      child: const Text(
+                        'Education',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Skills',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/skill');
+                      },
+                      child: const Text(
+                        'Skills',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'About',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/about');
+                      },
+                      child: const Text(
+                        'About',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Experience',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/experience');
+                      },
+                      child: const Text(
+                        'Experience',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'projects',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/project');
+                      },
+                      child: const Text(
+                        'projects',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'certifications',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/certification');
+                      },
+                      child: const Text(
+                        'certifications',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'languages',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/language');
+                      },
+                      child: const Text(
+                        'languages',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'socials',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/social');
+                      },
+                      child: const Text(
+                        'socials',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
                   ],
                 ),
@@ -200,10 +248,10 @@ class _AboutState extends State<About> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
+                  fillColor: const Color(0xffECECEC),
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -221,114 +269,81 @@ class _AboutState extends State<About> {
             ),),
             const SizedBox(height: 10,),
             const Divider(),
-            Padding(
-              padding: const EdgeInsets.only(right: 10, left: 10),
-              child: TextFormField(
-                style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500),
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  border:  const OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Colors.grey,
-                      width: 2.0, // Adjust the border width here
-                    ),
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(
-                      color: Colors.grey,
-                      width: 3,  // Adjust the border width here
-                    ),
-                    borderRadius: BorderRadius.circular(20)
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
-                  contentPadding:
-                  const EdgeInsets.symmetric(vertical: 60, horizontal: 20),
-                  label: const Text('It can be in school, college, offices or even while giving interviews. Although it may also be done in writing, '
-                      'it is frequently carried out in the form of a speech or presentation before the start of a meeting or event.',style: TextStyle(
-                    color: Colors.black54,
-                    fontSize: 20
-                  ),)
-                ),
+            const SizedBox(height: 25,),
+            Container(
+              //margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              height: 180,
+              width: 425,
+              decoration: BoxDecoration(
+                  color:const Color(0xffECECEC),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: Colors.black,width: 1)
+              ),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
+                child: Text('I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. '
+                    'I am friendly, helpful and polite, have a good sense of humour.'
+                    ' I am able to work independently in busy environments and also within a team setting.',style: TextStyle(
+                  color: Colors.black87,
+                  fontSize: 18
+                ),),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 10, left: 10,top: 20),
-              child: TextFormField(
-                style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500),
-                decoration: InputDecoration(
-                    filled: true,
-                    fillColor: const Color(0xffDFDFDF),
-                    border:  const OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.grey,
-                        width: 2.0, // Adjust the border width here
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.grey,
-                          width: 3,  // Adjust the border width here
-                        ),
-                        borderRadius: BorderRadius.circular(20)
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Colors.white),
-                        borderRadius: BorderRadius.circular(20)),
-                    contentPadding:
-                    const EdgeInsets.symmetric(vertical: 60, horizontal: 20),
-                    // //label: const Text('It can be in school, college, offices or even while giving interviews. Although it may also be done in writing, '
-                    //     'it is frequently carried out in the form of a speech or presentation before the start of a meeting or event.',style: TextStyle(
-                    //     color: Colors.black54,
-                    //     fontSize: 20
-                    // ),)
-                ),
+            const SizedBox(height: 15,),
+            Container(
+              //margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              height: 180,
+              width: 425,
+              decoration: BoxDecoration(
+                  color:const Color(0xffECECEC),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.black,width: 1)
+              ),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
+                child: Text('I am a punctual and motivated individual who is able to work in a busy environment and produce high standards of work. '
+                    'I am an excellent team worker and am able to take instructions from all levels and build up good working relationships with all colleagues.',style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 18
+                ),),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(right: 10, left: 10,top: 20),
-              child: TextFormField(
-                style: const TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500),
-                decoration: InputDecoration(
-                    filled: true,
-                    fillColor: const Color(0xffDFDFDF),
-                    border:  const OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.grey,
-                        width: 2.0, // Adjust the border width here
-                      ),
-                    ),
-                    enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.grey,
-                          width: 3,  // Adjust the border width here
-                        ),
-                        borderRadius: BorderRadius.circular(20)
-                    ),
-                    focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(color: Colors.white),
-                        borderRadius: BorderRadius.circular(20)),
-                    contentPadding:
-                    const EdgeInsets.symmetric(vertical: 60, horizontal: 20),
-                    // label: const Text('It can be in school, college, offices or even while giving interviews. Although it may also be done in writing, '
-                    //     'it is frequently carried out in the form of a speech or presentation before the start of a meeting or event.',style: TextStyle(
-                    //     color: Colors.black54,
-                    //     fontSize: 20
-                    // ),)
-                ),
+            const SizedBox(height: 15,),
+            Container(
+              //margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              height: 180,
+              width: 425,
+              decoration: BoxDecoration(
+                  color:const Color(0xffECECEC),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.black,width: 1)
+              ),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
+                child: Text('I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative.',style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 18
+                ),),
               ),
             ),
+            const SizedBox(height: 15,),
+            Container(
+              //margin: EdgeInsets.symmetric(vertical: 10,horizontal: 10),
+              height: 180,
+              width: 425,
+              decoration: BoxDecoration(
+                  color:const Color(0xffDFDFDF),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: Colors.black,width: 1)
+              ),
+              child: const Padding(
+                padding: EdgeInsets.symmetric(vertical: 10,horizontal: 15),
+                child: Text('I am a dedicated, organized and methodical individual. I have good interpersonal skills, am an excellent team worker and am keen and very willing to learn and develop new skills. I am reliable and dependable and often seek new responsibilities',style: TextStyle(
+                    color: Colors.black87,
+                    fontSize: 18
+                ),),
+              ),
+            )
           ],
         ),
       ),

@@ -8,7 +8,8 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-  int _currentIndex=0;
+  //int _currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,14 +33,20 @@ class _HomescreenState extends State<Homescreen> {
                 decoration: BoxDecoration(
                     color: const Color(0xff4CB6AC),
                     borderRadius: BorderRadius.circular(10)),
-                child: const Center(
-                    child: Text(
+                child: Center(
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/template');
+                    },
+                    child: const Text(
                       'Generate Resume',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.w500),
-                    )),
+                    ),
+                  ),
+                ),
               ),
             ),
           )
@@ -52,100 +59,148 @@ class _HomescreenState extends State<Homescreen> {
               height: 60,
               width: double.infinity,
               decoration: const BoxDecoration(color: Color(0xff009788)),
-              child:  SingleChildScrollView(
+              child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Personal',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/home');
+                      },
+                      child: const Text(
+                        'Personal',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Education',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/education');
+                      },
+                      child: const Text(
+                        'Education',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Skills',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/skill');
+                      },
+                      child: const Text(
+                        'Skills',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'About',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/about');
+                      },
+                      child: const Text(
+                        'About',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Experience',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/experience');
+                      },
+                      child: const Text(
+                        'Experience',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'projects',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/project');
+                      },
+                      child: const Text(
+                        'projects',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'certifications',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/certification');
+                      },
+                      child: const Text(
+                        'certifications',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'languages',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/language');
+                      },
+                      child: const Text(
+                        'languages',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'socials',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
-                    )
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/social');
+                      },
+                      child: const Text(
+                        'socials',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -162,14 +217,15 @@ class _HomescreenState extends State<Homescreen> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  hintText: 'Name',
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('Name',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your name ',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   //z  contentPadding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
                 ),
               ),
@@ -186,11 +242,12 @@ class _HomescreenState extends State<Homescreen> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  hintText: 'Email',
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('Email',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your email ',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -210,11 +267,12 @@ class _HomescreenState extends State<Homescreen> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  hintText: 'Mobile number',
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('Mobile number',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your Mobile number',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -234,11 +292,12 @@ class _HomescreenState extends State<Homescreen> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  hintText: 'location',
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('location',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your location',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -258,11 +317,12 @@ class _HomescreenState extends State<Homescreen> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
-                  hintText: 'job title',
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('job title',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your job title',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -270,20 +330,24 @@ class _HomescreenState extends State<Homescreen> {
                 ),
               ),
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             Container(
               height: 60,
               width: 250,
               decoration: BoxDecoration(
                   color: const Color(0xff009788),
-                  borderRadius: BorderRadius.circular(10)
-              ),
-              child: const Center(child: Text('Save details', style: TextStyle(
-                color: Colors.white,
-                fontSize: 23,
-                fontWeight: FontWeight.w400,
-              ),
-              ),
+                  borderRadius: BorderRadius.circular(10)),
+              child: const Center(
+                child: Text(
+                  'Save details',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 23,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
               ),
             ),
           ],
@@ -292,4 +356,3 @@ class _HomescreenState extends State<Homescreen> {
     );
   }
 }
-

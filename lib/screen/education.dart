@@ -55,117 +55,169 @@ class _Education_detailsState extends State<Education_details> {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Personal',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/home');
+                      },
+                      child: const Text(
+                        'Personal',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Education',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/education');
+                      },
+                      child: const Text(
+                        'Education',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Skills',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/skill');
+                      },
+                      child: const Text(
+                        'Skills',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'About',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/about');
+                      },
+                      child: const Text(
+                        'About',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Experience',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/experience');
+                      },
+                      child: const Text(
+                        'Experience',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'projects',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/project');
+                      },
+                      child: const Text(
+                        'projects',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'certifications',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/certification');
+                      },
+                      child: const Text(
+                        'certifications',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'languages',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/language');
+                      },
+                      child: const Text(
+                        'languages',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'socials',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
-                    )
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/social');
+                      },
+                      child: const Text(
+                        'socials',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
+                    ),
                   ],
                 ),
               ),
             ),
             const SizedBox(height: 30,),
-            TextFormField(
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500),
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: const Color(0xffDFDFDF),
-                hintText: 'institute name',
-                enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(20)),
-                focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(20)),
-                // contentPadding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+            Padding(
+              padding: const EdgeInsets.only(left: 10,right: 10),
+              child: TextFormField(
+                style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500),
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('institute name',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your institute name here',
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(10)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(20)),
+                  // contentPadding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+                ),
               ),
             ),
             const SizedBox(height: 20,),
@@ -181,11 +233,11 @@ class _Education_detailsState extends State<Education_details> {
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
                         filled: true,
-                        fillColor: const Color(0xffDFDFDF),
+                        fillColor: const Color(0xffECECEC),
                         hintText: 'Start date',
                         enabledBorder: OutlineInputBorder(
                             borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
+                            borderRadius: BorderRadius.circular(10)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(color: Colors.white),
                             borderRadius: BorderRadius.circular(20)),
@@ -204,11 +256,11 @@ class _Education_detailsState extends State<Education_details> {
                           fontWeight: FontWeight.w500),
                       decoration: InputDecoration(
                         filled: true,
-                        fillColor: const Color(0xffDFDFDF),
+                        fillColor: const Color(0xffECECEC),
                         hintText: 'End date',
                         enabledBorder: OutlineInputBorder(
                             borderSide: const BorderSide(color: Colors.white),
-                            borderRadius: BorderRadius.circular(20)),
+                            borderRadius: BorderRadius.circular(10)),
                         focusedBorder: OutlineInputBorder(
                             borderSide: const BorderSide(color: Colors.white),
                             borderRadius: BorderRadius.circular(20)),
@@ -220,41 +272,48 @@ class _Education_detailsState extends State<Education_details> {
               ],
             ),
             const SizedBox(height: 30,),
-            TextFormField(
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500),
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: const Color(0xffDFDFDF),
-                hintText: 'Grade',
-                enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(20)),
-                focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(20)),
-                // contentPadding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+            Padding(
+              padding: const EdgeInsets.only(left: 10,right: 10),
+              child: TextFormField(
+                style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500),
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color(0xffECECEC),
+                  label: Text('Grade',style: TextStyle(color: Colors.black54,fontSize: 20,fontWeight: FontWeight.bold),),
+                  hintText: 'Enter your Grade here',
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(10)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(20)),
+                  // contentPadding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+                ),
               ),
             ),
             SizedBox(height: 30,),
-            TextFormField(
-              style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 20,
-                  fontWeight: FontWeight.w500),
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: const Color(0xffDFDFDF),
-                hintText: 'Enter description here',
-                enabledBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(20)),
-                focusedBorder: OutlineInputBorder(
-                    borderSide: const BorderSide(color: Colors.white),
-                    borderRadius: BorderRadius.circular(20)),
-                 contentPadding: const EdgeInsets.symmetric(vertical: 65, horizontal: 20),
+            Padding(
+              padding: const EdgeInsets.only(left: 10,right: 10),
+              child: TextFormField(
+                style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 20,
+                    fontWeight: FontWeight.w500),
+                decoration: InputDecoration(
+                  filled: true,
+                  fillColor: const Color(0xffECECEC),
+                  hintText: 'Enter description here',
+                  enabledBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(10)),
+                  focusedBorder: OutlineInputBorder(
+                      borderSide: const BorderSide(color: Colors.white),
+                      borderRadius: BorderRadius.circular(20)),
+                   contentPadding: const EdgeInsets.symmetric(vertical: 65, horizontal: 20),
+                ),
               ),
             ),
             Row(

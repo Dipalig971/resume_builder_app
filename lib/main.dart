@@ -6,7 +6,9 @@ import 'package:resume_builder_app/screen/experience.dart';
 import 'package:resume_builder_app/screen/homescreen.dart';
 import 'package:resume_builder_app/screen/language.dart';
 import 'package:resume_builder_app/screen/loginscreen.dart';
+import 'package:resume_builder_app/screen/pdf.dart';
 import 'package:resume_builder_app/screen/project.dart';
+import 'package:resume_builder_app/screen/resumetemplates.dart';
 import 'package:resume_builder_app/screen/skills.dart';
 import 'package:resume_builder_app/screen/social.dart';
 import 'package:resume_builder_app/screen/splashscreen.dart';
@@ -31,14 +33,15 @@ class _Resume_Builder_AppState extends State<Resume_Builder_App> {
         '/':(context) => const Splashscreen(),
         '/login':(context) => const Loginscreen(),
         '/home':(context) => const Homescreen(),
-       '/education':(context) => const Education_details(),
-       '/skill':(context) => const Skills(),
+       '/education':(context) =>  Education_details(),
+       '/skill':(context) =>  Skills(),
         '/about':(context) => const About(),
         '/experience':(context) => const Experience(),
         '/project':(context) => const Project(),
         '/certification':(context) => const Certification(),
         '/language':(context) => const Language(),
         '/social':(context) => const Social(),
+        '/template':(context) => ResumeTemplates(),
       },
     );
   }

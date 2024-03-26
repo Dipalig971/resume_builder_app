@@ -51,99 +51,147 @@ class _SocialState extends State<Social> {
               height: 60,
               width: double.infinity,
               decoration: const BoxDecoration(color: Color(0xff009788)),
-              child: const SingleChildScrollView(
+              child:  SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Personal',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/home');
+                      },
+                      child: const Text(
+                        'Personal',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Education',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/education');
+                      },
+                      child: const Text(
+                        'Education',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Skills',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/skill');
+                      },
+                      child: const Text(
+                        'Skills',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'About',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/about');
+                      },
+                      child: const Text(
+                        'About',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'Experience',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/experience');
+                      },
+                      child: const Text(
+                        'Experience',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'projects',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/project');
+                      },
+                      child: const Text(
+                        'projects',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'certifications',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed('/certification');
+                      },
+                      child: const Text(
+                        'certifications',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'languages',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/language');
+                      },
+                      child: const Text(
+                        'languages',
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 25,
                     ),
-                    Text(
-                      'socials',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                          fontSize: 20),
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacementNamed('/social');
+                      },
+                      child: const Text(
+                        'socials',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 20),
+                      ),
                     ),
                   ],
                 ),
@@ -161,11 +209,11 @@ class _SocialState extends State<Social> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
+                  fillColor: const Color(0xffECECEC),
                   hintText: 'instagram link ',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -185,11 +233,11 @@ class _SocialState extends State<Social> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
+                  fillColor: const Color(0xffECECEC),
                   hintText: 'twitter link',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -209,11 +257,11 @@ class _SocialState extends State<Social> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
+                  fillColor: const Color(0xffECECEC),
                   hintText: 'github link',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
@@ -233,11 +281,11 @@ class _SocialState extends State<Social> {
                     fontWeight: FontWeight.w500),
                 decoration: InputDecoration(
                   filled: true,
-                  fillColor: const Color(0xffDFDFDF),
+                  fillColor: const Color(0xffECECEC),
                   hintText: 'linkedin link',
                   enabledBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
-                      borderRadius: BorderRadius.circular(20)),
+                      borderRadius: BorderRadius.circular(10)),
                   focusedBorder: OutlineInputBorder(
                       borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(20)),
